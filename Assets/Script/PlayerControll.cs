@@ -24,7 +24,7 @@ public class PlayerControll : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("coin"))
+        if (other.gameObject.CompareTag("Item"))
         {
             other.gameObject.SetActive(false);
             score = score + 1;
